@@ -1,0 +1,784 @@
+:root {
+  --swatch-bg: #58b12f;
+  --swatch-main: #000;
+  --size-text--main-heading: 16.3vw;
+  --size-padding--main: 2rem;
+  --size-padding--size-padding-mob: 1rem;
+  --size-padding--size-line: .1rem;
+  --swatch-light: #faff00;
+  --size-text--size-m: 4.2rem;
+  --size-text--size-text--size-m-mob: 2rem;
+  --size-text--text-button: 8.4rem;
+  --size-text--size-text--size-button-mob: 4rem;
+  --size-text--size-text--main-heading-mob: 10rem;
+  --size-text--size-s: 3rem;
+  --size-text--size-l: 4.6rem;
+  --swatch-dark: #3e841e;
+  --size-padding--size-padding-s: .625rem;
+  --white: white;
+  --black: black;
+}
+
+body {
+  background-color: #58b12f;
+  color: #000;
+  font-family: Bebas Neue, sans-serif;
+  line-height: 9px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 16.3vw;
+  text-align: center;
+  letter-spacing: -.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: -1.6rem;
+  font-weight: 400;
+  line-height: 81%;
+}
+
+p {
+  color: #000;
+  margin-bottom: 0;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: .75rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.navbar.border {
+  border-bottom: .1rem solid black;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.logotype {
+  background-color: #faff00;
+  width: 23.7rem;
+  height: 3rem;
+  transition: width .2s;
+}
+
+.logotype:hover {
+  width: 25rem;
+}
+
+.logo {
+  color: #000;
+  font-size: 3.6rem;
+  line-height: 100%;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding-right: .625rem;
+  transition: transform .2s;
+}
+
+.icon:hover {
+  transform: scale(.9);
+}
+
+.icon.is-last {
+  padding-right: 0;
+}
+
+.heading-wrap {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-bottom: .1rem solid black;
+  white-space: nowrap;
+}
+
+.heading {
+  line-height: 84%;
+}
+
+.about-wrap {
+  z-index: 10;
+  padding: 2rem 2rem 2rem;
+  border-bottom: .1rem solid black;
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.is-about {
+  font-size: 4.2rem;
+  letter-spacing: -.08rem;
+  line-height: 102%;
+}
+
+.is-line-text {
+  text-decoration: underline;
+}
+
+.button-wrap {
+  padding: 2rem;
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.button-wrap.border {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-bottom: .1rem solid black;
+}
+
+.button {
+  background-color: #000 !important;
+  color: #faff00 !important;
+  font-size: 7rem !important;
+  letter-spacing: 3px !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1rem !important;
+  line-height: 86% !important;
+  transition: color .2s !important;
+  border: 0 !important;
+  text-transform: uppercase  !important;
+  cursor: pointer  !important;
+  font-weight: 600  !important;
+}
+
+.button:hover {
+  color: #58b12f !important;
+}
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #000000 !important;
+  background-color: yellow !important;
+  color: #96d502;
+  border-radius: 4px !important;
+  display: inline-block !important;
+  position: relative !important;
+  cursor: pointer  !important;
+  outline: 5px solid black; 
+}
+.button.is-error {
+  color: #d62e31;
+  background-color: #000;
+}
+
+.button:disabled {
+  cursor: not-allowed; 
+}
+
+.footer {
+  padding: 1.5rem 2rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.page-wrap {
+  flex-flow: column;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.is-mob.is-hide-mob {
+  display: none;
+}
+
+.text-size-m {
+  font-size: 4.1rem;
+  line-height: 100%;
+}
+
+.text-size-m.web-hide {
+  display: none;
+}
+
+.text-h1.is-hide-mobile {
+  pointer-events: none;
+}
+
+.nft-claim {
+  padding: 2rem 2rem 2rem;
+  border-bottom: .1rem solid black;
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -28.3rem;
+  display: flex;
+}
+
+.is-yellow-line {
+  border: .5rem solid #faff00;
+}
+
+.nft-card {
+  background-color: #faff00;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 26rem;
+  display: flex;
+  position: relative;
+  right: 3.6rem;
+}
+
+.nft-img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 10%;
+}
+
+.paragraph-s {
+  font-size: 3rem;
+}
+
+.nft-send-proof {
+  padding: 2rem 2rem 2rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  border-bottom: .1rem solid black;
+  text-align: center;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+
+.confirm-wrap {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  text-align: left;
+  display: flex;
+}
+
+.confi-icon {
+  cursor: pointer;
+  border: .4rem solid #000;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform .2s;
+}
+
+.confi-icon:hover {
+  transform: scale(.95);
+}
+
+.nft-send-proof-mob {
+  padding: 2rem 2rem 2rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  border-bottom: .1rem solid black;
+  text-align: center;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: -28.3rem;
+  display: flex;
+}
+
+.nft-send-proof-mob.is-hide-mob {
+  display: none;
+}
+
+.nft-img {
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 50%;
+  background-size: 125px;
+  width: 95%;
+  height: 95%;
+}
+
+.nft-img.is-in-review {
+  width: 60%;
+  height: 60%;
+}
+
+.is-yellow {
+  color: #faff00;
+}
+
+.absolute {
+  position: absolute;
+  top: 7.6rem;
+  left: 44.6rem;
+  right: 44.6rem;
+}
+
+.upload-icon {
+  transition: transform .2s;
+  transform: scale(.95);
+  
+}
+
+.upload-icon:hover {
+  transform: scale(.9);
+}
+
+.nft-wrap {
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: .1rem solid black;
+  text-align: center;
+  flex: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-height: 51.7rem;
+  margin-top: auto;
+  display: flex;
+}
+
+.text-wrap {
+  z-index: 10;
+  text-align: left;
+  width: 40.8rem;
+  position: relative;
+}
+
+.yellow-text {
+  color: #faff00;
+}
+
+.lvls-wrap {
+  z-index: 10;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: .25fr;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 33.5rem;
+  margin-top: auto;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+}
+
+.lvls-wrap.is-hide-mob {
+  flex-flow: column;
+  display: flex;
+}
+
+.lvls-wrap.is-hide-mob.is-in-review {
+  z-index: 10;
+}
+
+.lvls-wrap.is-in-review {
+  opacity: .2;
+}
+
+.text-size-l {
+  font-size: 4.6rem;
+  margin-bottom: 0;
+}
+
+.lvl {
+  text-align: left;
+  border-width: 1px;
+  border-color: #000;
+  border-bottom-style: solid;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 33.5rem;
+  display: flex;
+}
+
+.lvl.last {
+  margin-bottom: 0;
+}
+
+.lvl-right {
+  border-bottom: 1px solid #000;
+  margin-left: auto;
+}
+
+.button-review {
+  background-color: #3e841e;
+  color: #faff00;
+  font-size: 8.4rem;
+  cursor: default;
+  padding-top: .875rem;
+  padding-bottom: .375rem;
+  line-height: 86%;
+  transition: color .2s;
+}
+
+.button-review.is-error {
+  color: #d62e31;
+  background-color: #000;
+}
+
+.text-size-s {
+  font-size: 3rem;
+}
+
+.is-in-review {
+  opacity: .2;
+}
+
+.is-in-review-button {
+  opacity: .2;
+  cursor: not-allowed;
+}
+.admin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.the-nft-wrap {
+  z-index: 0;
+  background-color: #faff00;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: transform .2s, opacity .5s;
+  display: flex;
+  position: absolute;
+  transform: translate(0, 100vh);
+}
+
+.the-nft-img {
+  height: 96vh;
+}
+
+.the-nft-img:hover {
+  mix-blend-mode: normal;
+}
+
+.btn-cancel {
+  position: absolute;
+  inset: 2rem 2rem auto auto;
+}
+
+.btn-cancel:hover {
+  transform: scale(.9);
+}
+
+.logo-a {
+  font-size: 3.6rem;
+}
+
+@media screen and (max-width: 991px) {
+
+  .is-tw-hide{
+    display: none;
+  }
+  .button {
+    background-color: #000 !important;
+    color: #faff00 !important;
+    font-size: 4.5rem !important;
+    letter-spacing: 3px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1rem !important;
+    line-height: 86% !important;
+    transition: color .2s !important;
+    border: 0 !important;
+    text-transform: uppercase  !important;
+    cursor: pointer  !important;
+    font-weight: 600  !important;
+  }
+
+  h1 {
+    font-size: 16.3vw;
+  }
+
+  .heading-wrap {
+    flex: 0 auto;
+    display: flex;
+  }
+  .upload-icon {
+    height: 80px;
+    width: 80px;
+  }
+
+  .Selected {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .heading-wrap {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    white-space: normal;
+  }
+
+  .about-wrap {
+    text-align: left;
+  }
+
+  .is-about {
+    font-size: 2rem;
+  }
+
+  .is-about.is-mob-paragraph {
+    text-align: justify;
+  }
+
+  .is-line-text {
+    text-align: right;
+    display: block;
+  }
+
+  .button-wrap {
+    padding: 1rem;
+  }
+
+  .button-wrap.border {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .button {
+    font-size: 4rem;
+  }
+
+  .footer {
+    padding: 1rem 1rem .5rem;
+  }
+
+  .page-wrap {
+    height: 100svh;
+  }
+
+  .is-hide-mob {
+    display: none;
+  }
+
+  .is-mob {
+    font-size: 10rem;
+    text-align: left;
+  }
+
+  .is-mob.is-hide-mob {
+    letter-spacing: -.5rem;
+    margin-left: 0;
+    display: block;
+  }
+
+  .text-size-m {
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  .text-size-m.web-hide {
+    display: block;
+  }
+
+  .text-h1 {
+    display: none;
+  }
+
+  .nft-claim {
+    padding: 1rem;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .nft-claim.is-mob {
+    margin-top: auto;
+  }
+
+  .is-yellow-line.absolut {
+    position: absolute;
+    top: 7.5rem;
+  }
+
+  .nft-card {
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    height: 22rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    top: 10rem;
+    left: 0;
+    right: 0;
+  }
+
+  .paragraph-s {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .nft-send-proof {
+    padding: 1rem;
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+    text-align: left;
+    flex-flow: column;
+    align-items: stretch;
+  }
+
+  .nft-send-proof.is-mob {
+    margin-top: auto;
+  }
+
+  .nft-send-proof-mob {
+    grid-column-gap: 16.6rem;
+    grid-row-gap: 16.6rem;
+    text-align: left;
+    flex-flow: column;
+    margin-top: -37.1rem;
+  }
+
+  .nft-send-proof-mob.is-mob {
+    margin-top: auto;
+  }
+
+  .nft-send-proof-mob.is-hide-mob {
+    display: flex;
+  }
+
+  .nft-img {
+    border-width: 5rem;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .absolute {
+    top: 6.8rem;
+    left: 0;
+    right: 0;
+  }
+
+  .absolute.is-yellow-line {
+    top: 7.6rem;
+  }
+
+  .upload-icon {
+    height: 200px;
+    width: 220px;
+    top: 10%;
+  }
+
+  .Selected {
+    height: 220px;
+    width: 220px;
+  }
+
+  .nft-wrap {
+    padding: 1rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    text-align: left;
+    flex-flow: column;
+    align-items: stretch;
+  }
+
+  .nft-wrap.is-mob {
+    margin-top: auto;
+  }
+
+  .text-wrap {
+    text-align: justify;
+    order: 1;
+    align-self: center;
+    width: 35rem;
+    margin-top: auto;
+  }
+
+  .lvls-wrap.is-in-review.is-hide-mob {
+    display: none;
+  }
+
+  .text-size-l {
+    font-size: 2rem;
+  }
+
+  .lvl {
+    justify-content: space-between;
+    align-items: stretch;
+    width: 35.6rem;
+  }
+
+  .button-review {
+    font-size: 4rem;
+  }
+
+  .text-size-s {
+    font-size: 2rem;
+  }
+
+  .logo-a {
+    font-size: 2.4rem;
+  }
+}
+
+#w-node-_3c7c7431-5b3f-3ca3-f859-7a5558a3da1b-b3c14361, #w-node-_3c7c7431-5b3f-3ca3-f859-7a5558a3da1b-51c2bcea {
+  justify-self: stretch;
+}
+
+
+
+/*Размер шрифта в PX для экранов шире 1440px, чтобы страница не масштабировалась*/
+html{font-size: 10px}
+/*Размер шрифта для экранов от 1440px и меньше*/
+@media(max-width:1440px) {
+  html{font-size: 0.6944vw}
+}
+@media(max-width: 479px) {
+  html{font-size: 2.667vw}
+}
+
+#fill-available{
+height: 100%;
+height: -moz-available;          /* WebKit-based browsers will ignore this. */
+height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+height: stretch;
+}
+
+
+
+
+
+
+
+
